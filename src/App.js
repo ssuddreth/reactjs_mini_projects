@@ -6,6 +6,7 @@ import RandomColor from './components/random-color/random-color-index';
 import StarRating from './components/star-rating/star-rating-index';
 import TreeView from './components/tree-view/tree-view-index';
 import menus from './components/tree-view/tree-view-data';
+import QRCodeGenerator from './components/qr-code-generator/qr-code-index';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ImageSlider url={"https://picsum.photos/v2/list"} page={"1"} limit={"10"} />
       <LoadMoreData />
       <TreeView menus={menus} />
+      <QRCodeGenerator />
     </div>
   );
 }
